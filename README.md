@@ -4,6 +4,7 @@ A mock server generated from one or more arbitrary Swagger files.
 Supports seeding, timeouts, response picking,
 entity memory, semantic action inference, etc.
 
+Note: upgrade to swagger-ui v3
 
 ## Usage
 
