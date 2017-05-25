@@ -5,10 +5,11 @@ var generate2 = pokemock.generate2;
 
 module.exports = createDefaultApp;
 
-function createDefaultApp( apis, options ) {
+function createDefaultApp( apis, options, app = null ) {
 
   options = options || {};
-  var app = express();
+
+  app = app || express();
 
   app.get( '/api-docs', pokemock.apiDocs( apis ) );
   app.use( '/ui', pokemock.ui );
